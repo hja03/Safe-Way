@@ -67,23 +67,4 @@ def components():
     body_html = m.get_root().html.render()
     script = m.get_root().script.render()
 
-    return render_template_string(
-        """
-            <!DOCTYPE html>
-            <html>
-                <head>
-                    {{ header|safe }}
-                </head>
-                <body>
-                    <h1>Using components</h1>
-                    {{ body_html|safe }}
-                    <script>
-                        {{ script|safe }}
-                    </script>
-                </body>
-            </html>
-        """,
-        header=header,
-        body_html=body_html,
-        script=script,
-    )
+    return render_template("index.html", header=header, body_html=body_html, script=script)
