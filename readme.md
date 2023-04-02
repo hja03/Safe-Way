@@ -10,9 +10,15 @@ We have leveraged cutting-edge ML to predict crime patterns within Bath to help 
 
 ### How we built it
 
-Dataset:
+##### Dataset:
 
 - data.police.uk: (provided us with details about all the crimes in Bath and Bristol in addition to their location)
+
+##### ML Model:
+
+The ML model is an encoder-decoder based architecture, built using 3D convolutional layers to capture the last 3 months of crime activity with respect to the location data, which would then predict the density of crime for the next month. We transformed the database of singular crime events from the police API into heatmap images for each month and used these as the training data for our model. We used various regularisation methods to help generalise our model to new data, due to the smaller size of our training data.
+
+<img src="Presentation1.png" alt="ml" width="600">
 
 ### Screenshot
 
