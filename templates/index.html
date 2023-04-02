@@ -25,17 +25,17 @@
         <div id="overlay">
 
             <div id="time_wrapper">
-                <button id="prev_month" onclick="previousMonth()">previous month</button>
-                <div    id="current_date">{{ date }}</div>
-                <button id="next_month" onclick="nextMonth()">next month</button>
+                <button id="prev_month" onclick="previousMonth()"><</button>
+                <div    id="current_date"><b>{{ date }}</b></div>
+                <button id="next_month" onclick="nextMonth()">></button>
             </div>
             
-            <button id="mode_change" onclick="changeMode()">{{ mode }} mode</button>
+            <button id="mode_change" onclick="changeMode()">Current Mode: <b>{{ mode }}</b></button>
 
             <form method="POST">
-                <input name="from" id="from" placeholder="From..." /><!--  
-             --><input name="to" id="to" placeholder="To..." />
-                <input type="submit" id="submit" value="Submit">
+                <input name="from" id="from" autocomplete="off" placeholder="From..." /><!--  
+             --><input name="to" id="to" autocomplete="off" placeholder="To..." />
+                <input type="submit" id="submit" value="Find Route">
             </form>
 
         </div>
