@@ -14,9 +14,6 @@ def get_safe_direction(crimes, startLocation, endLocation):
     danger2 = get_danger(crimes, route2)
     danger3 = get_danger(crimes, route3)
     
-    
-
-    
 
 def get_danger(crimes, route):
     crimes = copy.deepcopy(crimes)
