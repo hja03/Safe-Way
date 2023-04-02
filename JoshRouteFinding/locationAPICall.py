@@ -5,7 +5,7 @@ import json
 # url = "https://maps.googleapis.com/maps/api/geocode/json"
 # params = {
 #     "address": "Labyrinth, Bath",
-#     "key": "AIzaSyBFlEFbOWpgQYtHwDoqqS5XPIAenXK-SUw"
+#     "key": "googleAPIKEY" ################################################################
 # }
 
 # # Send the request
