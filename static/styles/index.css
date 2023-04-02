@@ -1,5 +1,7 @@
 :root {
   --border-rad: 0.5rem;
+  --border-color: black;
+  --border-highlight: rgb(71, 175, 255);
 }
 
 body, #main, #map, iframe { 
@@ -7,12 +9,16 @@ body, #main, #map, iframe {
   height: 100vh !important;
 }
 
+iframe {
+  height: calc(100vh - 17.5rem) !important;
+}
+
 #main {
   position: relative;
 }
 
 #overlay {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.446);
   width: 100%;
   height: 17.5rem;
   position: absolute;
@@ -20,6 +26,18 @@ body, #main, #map, iframe {
   left: 0;
   padding: 0.5rem;
   box-sizing: border-box;
+  border-top: 1px solid var(--border-color);
+  /* font-size: 1rem; */
+}
+
+#prev_month {
+  border-top-left-radius: var(--border-rad);
+  border-bottom-left-radius: var(--border-rad);
+}
+
+#next_month {
+  border-top-right-radius: var(--border-rad);
+  border-bottom-right-radius: var(--border-rad);
 }
 
 #prev_month, #next_month {
@@ -28,19 +46,22 @@ body, #main, #map, iframe {
 
 #prev_month, #current_date, #next_month {
   /* background-color: brown; */
-  border: 1px solid black;
-  border-radius: 0;
+  border: 1px solid var(--border-color);
+  /* border-radius: 0; */
   outline: none;
   height: 3rem;
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 #current_date {
   border-left: 0;
   border-right: 0;
+  border-radius: 0;
   width: 60%;
   line-height: 3rem;
   text-align: center;
+  font-size: 1rem;
 }
 
 #time_wrapper {
@@ -52,10 +73,19 @@ body, #main, #map, iframe {
   box-sizing: border-box;
   line-height: 3rem;
   height: 3rem;
-  border-radius: 0;
-  border: 1px solid black;
+  border-radius: var(--border-rad);;
+  border: 1px solid var(--border-color);
   width: 100%;
   margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+#from:focus, #to:focus {
+  border-color: var(--border-highlight);
+}
+
+#from:focus + #to {
+  border-top-color: var(--border-highlight);
 }
 
 #from, #to, #submit {
@@ -63,10 +93,11 @@ body, #main, #map, iframe {
   border-radius: 0;
   line-height: 3rem;
   height: 3rem;
-  border: 1px solid black;
+  border: 1px solid var(--border-color);
   outline: none;
   width: 100%;
   padding-left: 1rem;
+  font-size: 1rem;
 }
 
 #from {
@@ -79,11 +110,12 @@ body, #main, #map, iframe {
   border-bottom-right-radius: var(--border-rad);
 }
 
-#to {
-  border-top: none;
+#from {
+  border-bottom: none;
 }
 
 #submit {
   margin-top: 0.5rem;
+  border-radius: var(--border-rad);
 }
 
