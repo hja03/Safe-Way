@@ -48,8 +48,8 @@ def historical():
         print("user Start", user_input_start)
         print("user finish", user_input_finish)
         starting_location, ending_location, route = get_route(user_input_start, user_input_finish, locations)
-        m = folium.Map(location=starting_location, zoom_start=12)
-        polyline = folium.PolyLine(locations=route, weight=5, color='blue')
+        m = folium.Map(location=starting_location, zoom_start=14)
+        polyline = folium.PolyLine(locations=route, weight=13, color='blue')
         polyline.add_to(m)
         
         folium.Marker(location=starting_location, popup='Start').add_to(m)
@@ -58,7 +58,7 @@ def historical():
         text_path = PolyLineTextPath(polyline, text)
         text_path.add_to(m)
 
-    plugins.HeatMap(locations, min_opacity=0.4, max_zoom=13).add_to(m)
+    plugins.HeatMap(locations, min_opacity=0.4, max_zoom=14).add_to(m)
 
     iframe = m.get_root()._repr_html_()
     return render_template("index.html", iframe=iframe, date=format_date(month, year), mode="Historical")
@@ -112,7 +112,7 @@ def ml():
         user_input_start = request.form['from']
         user_input_finish = request.form['to']
         starting_location, ending_location, route = get_route(user_input_start, user_input_finish, locations)
-        m = folium.Map(location=starting_location, zoom_start=12)
+        m = folium.Map(location=starting_location, zoom_start=14)
         polyline = folium.PolyLine(locations=route, weight=5, color='blue')
         polyline.add_to(m)
         
