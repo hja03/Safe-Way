@@ -22,10 +22,27 @@
 
         <div id="map">{{ iframe|safe }}</div>
 
-        <div id="overlay"></div>
+        <div id="overlay">
+
+            <div id="time_wrapper">
+                <button id="prev_month" onclick="previousMonth()">previous month</button>
+                <div    id="current_date">{{ date }}</div>
+                <button id="next_month" onclick="nextMonth()">next month</button>
+            </div>
+            
+            <button id="mode_change" onclick="changeMode()">{{ mode }} mode</button>
+
+            <form method="POST">
+                <input name="from" id="from" placeholder="From..." /><!--  
+             --><input name="to" id="to" placeholder="To..." />
+                <input type="submit" id="submit" value="Submit">
+            </form>
+
+        </div>
 
     </div>
-
+    
+    <script src="static/scripts/main.js"></script> 
 
 </body>
 
