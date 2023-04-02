@@ -25,8 +25,8 @@ def random_range(lower, upper):
 
 def historical():
 
-    if request.method == "POST":
-        print(request.form)
+    # if request.method == "POST":
+    #     print(request.form)
 
     m = folium.Map(location=[51.38, -2.3785], tiles='OpenStreetMap', zoom_start=13)
 
@@ -38,7 +38,7 @@ def historical():
 
     tl = (51.41, -2.428)
     br = (51.35, -2.329)
-    folium.Rectangle([tl, br]).add_to(m)
+    # folium.Rectangle([tl, br]).add_to(m)
 
     locations = np.column_stack((applicable_rows['Latitude'], applicable_rows['Longitude']) )
 
@@ -105,7 +105,7 @@ def ml():
 
     tl = (51.41, -2.428)
     br = (51.35, -2.329)
-    folium.Rectangle([tl, br]).add_to(m)
+    # folium.Rectangle([tl, br]).add_to(m)
 
     # Plotting the route
     if request.method == "POST":

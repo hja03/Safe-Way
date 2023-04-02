@@ -20,14 +20,16 @@
 <body>
     <div id="main">
 
+        <div id="title">The Safe Way</div>
+
         <div id="map">{{ iframe|safe }}</div>
 
         <div id="overlay">
 
             <div id="time_wrapper">
-                <button id="prev_month" onclick="previousMonth()"><</button>
+                <button id="prev_month" onclick="previousMonth()">◀</button>
                 <div    id="current_date"><b>{{ date }}</b></div>
-                <button id="next_month" onclick="nextMonth()">></button>
+                <button id="next_month" onclick="nextMonth()">▶</button>
             </div>
             
             <button id="mode_change" onclick="changeMode()">Current Mode: <b>{{ mode }}</b></button>

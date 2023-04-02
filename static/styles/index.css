@@ -1,16 +1,36 @@
 :root {
   --border-rad: 0.5rem;
-  --border-color: rgb(208, 208, 208);
-  --border-hover: rgb(189, 189, 189);
+  --border-color: rgb(189, 189, 189);
+  --border-hover: rgb(167, 167, 167);
   --border-highlight: rgb(71, 175, 255);
   --button-color: rgb(227, 250, 255);
-  --button-hover: rgb(194, 246, 255);
-  --button-active: rgb(175, 243, 255);
+  --button-hover: rgb(200, 233, 238);
+  --button-active: rgb(161, 212, 221);
   --ui-background: rgb(235, 235, 235);
   --light-background: rgb(255, 255, 255);
 }
 
-body, #main, #map, iframe { 
+#title {
+  position: absolute;
+  width: 60%;
+  margin-left: 20%;
+  line-height: 3rem;
+  height: 3rem;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  /* background-color: aquamarine; */
+  text-align: center;
+  font-size: 2rem;
+  /* backdrop-filter: blur(10px); */
+  background-color: var(--ui-background);
+  border-radius: var(--border-rad);
+  border: 1px solid var(--border-color);
+  margin-top: 10px;
+}
+
+body, #main, #map, iframe {
   width: 100vw !important;
   height: 100vh !important;
 }

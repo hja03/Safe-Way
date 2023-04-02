@@ -89,14 +89,14 @@ def get_safe_direction(startLocation, endLocation, crimes):
     
 
 def get_danger(crimes, route):
-    distance = (15/111139)**2
+    distance = (25/111139)**2
     danger = 0
 
     for place in route:
         for crime in crimes:
             # if ((crime[1] - place[0])**2 + (crime[0] - place[1])**2) > 200:
                 # print("Check Danger function")
-            if ((crime[0] - place[0])**2 + (crime[0] - place[0])**2) < distance:
+            if ((crime[0] - place[0])**2 + (crime[1] - place[1])**2) < distance:
                 danger+=1
     return danger
 
