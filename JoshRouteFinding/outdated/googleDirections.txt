@@ -1,0 +1,158 @@
+{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "partial_match" : true,
+         "place_id" : "ChIJ8zTvTlKBcUgRxFl3Ilkrczk",
+         "types" : [ "establishment", "night_club", "point_of_interest" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJIcgNtTCBcUgRYDBACu9Eoac",
+         "types" : [ "premise" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 51.3820969,
+               "lng" : -2.3510731
+            },
+            "southwest" : {
+               "lat" : 51.3766227,
+               "lng" : -2.3815827
+            }
+         },
+         "copyrights" : "Map data ©2023",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "3.2 km",
+                  "value" : 3161
+               },
+               "duration" : {
+                  "text" : "8 mins",
+                  "value" : 465
+               },
+               "end_address" : "64 Brook Rd, Bath BA2 3RR, UK",
+               "end_location" : {
+                  "lat" : 51.3804357,
+                  "lng" : -2.3814217
+               },
+               "start_address" : "8 N Parade, Bath BA2 4AL, UK",
+               "start_location" : {
+                  "lat" : 51.3808247,
+                  "lng" : -2.3567274
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.4 km",
+                        "value" : 379
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 71
+                     },
+                     "end_location" : {
+                        "lat" : 51.38093,
+                        "lng" : -2.3512762
+                     },
+                     "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e on \u003cb\u003eN Parade\u003c/b\u003e toward \u003cb\u003eDuke St\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "cirxHphkMAK?_B?a@?GAI?y@A}@A{@?[A_AAkA?e@CuBAmCAy@AaF"
+                     },
+                     "start_location" : {
+                        "lat" : 51.3808247,
+                        "lng" : -2.3567274
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.0 km",
+                        "value" : 963
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 136
+                     },
+                     "end_location" : {
+                        "lat" : 51.37700539999999,
+                        "lng" : -2.3597886
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003ePulteney Rd (South)\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eA36\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow A36\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "yirxHnfjMhBEp@ClACN?VCzAOPCJARAX?L@L@F@JDJFNJfBbBz@~@Rp@JZDV@BD\\DX@HZdBDTDTDVFh@@X@V@l@?fA?p@H~@VdA?@XzA@J?@Bh@?p@A^C\\GZKj@Kj@CPCHEVCR?BCTARCXAT?NAj@?hAAlAA^CV"
+                     },
+                     "start_location" : {
+                        "lat" : 51.38093,
+                        "lng" : -2.3512762
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "1.6 km",
+                        "value" : 1617
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 222
+                     },
+                     "end_location" : {
+                        "lat" : 51.3820969,
+                        "lng" : -2.3809304
+                     },
+                     "html_instructions" : "At \u003cb\u003eChurchill Bridge Roundabout\u003c/b\u003e, take the \u003cb\u003e2nd\u003c/b\u003e exit onto \u003cb\u003eLower Bristol Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eA36\u003c/b\u003e",
+                     "maneuver" : "roundabout-left",
+                     "polyline" : {
+                        "points" : "iqqxHt{kMAt@GpAI|AEp@ALAHAD?BA@?@CFCBABEBGBE?E?ECCCACACACKPMt@Kt@AFKn@Y`Bg@|Ce@rCUrAGf@Ef@AL?@AJMhBO`CGlB?BEx@APCd@CNCTG^Kf@Sz@a@~Ai@~BK^CNENQr@I`@IVQn@[x@IVUz@Yz@{@nCk@jBM^[|@Qh@Yz@S|@Ib@CTIx@Gp@Et@InAMpCARE`AMxAo@rHMnBGx@SdCKrAAP"
+                     },
+                     "start_location" : {
+                        "lat" : 51.37700539999999,
+                        "lng" : -2.3597886
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 km",
+                        "value" : 202
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 36
+                     },
+                     "end_location" : {
+                        "lat" : 51.3804357,
+                        "lng" : -2.3814217
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eBrook Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "cqrxHx_pMb@lApAj@TFH?F?NEj@QH?f@Cp@?D?FC"
+                     },
+                     "start_location" : {
+                        "lat" : 51.3820969,
+                        "lng" : -2.3809304
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "cirxHphkMUaa@xFMpCYl@AZBRFZRbDbD^lARrAh@zCL`ABp@@tB?p@H~@VfAZfBBj@ApAKx@WvAQfAIfACzCClBElAYnFETIPMFK?MOACKPYjBoAvH{@fFMnAQdCO`CGlBE|@M|ASfAu@zC_A~Dw@|Ce@pAo@vBqCxIk@dB]`B[vD_@vHsAvP_@xEAPb@lAfBr@P?z@Wp@Cv@?FC"
+         },
+         "summary" : "A36 and Lower Bristol Rd/A36",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}

@@ -1,0 +1,69 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "8",
+               "short_name" : "8",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "North Parade",
+               "short_name" : "N Parade",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Bath",
+               "short_name" : "Bath",
+               "types" : [ "postal_town" ]
+            },
+            {
+               "long_name" : "Bath and North East Somerset",
+               "short_name" : "Bath and North East Somerset",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "England",
+               "short_name" : "England",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United Kingdom",
+               "short_name" : "GB",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "BA2 4AL",
+               "short_name" : "BA2 4AL",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "8 N Parade, Bath BA2 4AL, UK",
+         "geometry" : {
+            "location" : {
+               "lat" : 51.380679,
+               "lng" : -2.3567243
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 51.3821008302915,
+                  "lng" : -2.355376869708498
+               },
+               "southwest" : {
+                  "lat" : 51.3794028697085,
+                  "lng" : -2.358074830291502
+               }
+            }
+         },
+         "partial_match" : true,
+         "place_id" : "ChIJ8zTvTlKBcUgRxFl3Ilkrczk",
+         "plus_code" : {
+            "compound_code" : "9JJV+78 Bath, UK",
+            "global_code" : "9C3V9JJV+78"
+         },
+         "types" : [ "establishment", "night_club", "point_of_interest" ]
+      }
+   ],
+   "status" : "OK"
+}
