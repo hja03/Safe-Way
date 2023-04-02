@@ -1,7 +1,13 @@
 :root {
   --border-rad: 0.5rem;
-  --border-color: black;
+  --border-color: rgb(162, 162, 162);
+  --border-hover: rgb(83, 83, 83);
   --border-highlight: rgb(71, 175, 255);
+
+  /* todo */
+  --button-color: red;
+  --button-hover: red;
+  --button-active: red;
 }
 
 body, #main, #map, iframe { 
@@ -27,7 +33,6 @@ iframe {
   padding: 0.5rem;
   box-sizing: border-box;
   border-top: 1px solid var(--border-color);
-  /* font-size: 1rem; */
 }
 
 #prev_month {
@@ -42,6 +47,10 @@ iframe {
 
 #prev_month, #next_month {
   width: 20%;
+}
+
+#prev_month:hover, #next_month:hover {
+  border-color: var(--border-hover);
 }
 
 #prev_month, #current_date, #next_month {
@@ -80,8 +89,20 @@ iframe {
   font-size: 1rem;
 }
 
+#mode_change:hover {
+  border-color: var(--border-hover);
+}
+
+#from:hover, #to:hover {
+  border-color: var(--border-hover);
+}
+
 #from:focus, #to:focus {
   border-color: var(--border-highlight);
+}
+
+#from:hover + #to {
+  border-top-color: var(--border-hover);
 }
 
 #from:focus + #to {
@@ -119,3 +140,6 @@ iframe {
   border-radius: var(--border-rad);
 }
 
+#submit:hover {
+  border-color: var(--border-hover);
+}
