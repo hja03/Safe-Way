@@ -28,7 +28,11 @@ def get_directions(start, end, driving=False, cycling=False):
     api_response = json.loads(call.text)
     
     # Extract the geometry values
-    route = api_response['features'][0]['geometry']['coordinates']
+    try:
+        route = api_response['features'][0]['geometry']['coordinates']
+    except:
+        print("error")
+        print(api_response)
 
     # Reversing Longitude and Latitudes
     newRoute = []
