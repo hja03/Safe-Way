@@ -3,10 +3,9 @@ import numpy as np
 import copy
 import ast
 
-# from getDirection import get_directions
+from getDirection import get_directions
 
-from JoshRouteFinding.getDirection import get_directions
-
+# from JoshRouteFinding.getDirection import get_directions
 
 def get_safe_direction(startLocation, endLocation, crimes):
     # startLocation = copy.deepcopy(startLocation)
@@ -85,22 +84,63 @@ def get_safe_direction(startLocation, endLocation, crimes):
     return bestStart
     
 
+def get_safe_direction_old(startLocation, endLocation, crimes):
+    route1 = get_directions(startLocation, endLocation, driving=True)
+    route2 = get_directions(startLocation, endLocation, cycling=True)
+    route3 = get_directions(startLocation, endLocation)
 
+    danger1 = get_danger(crimes, route1)
+    danger2 = get_danger(crimes, route2)
+    danger3 = get_danger(crimes, route3)
+    print("danger1: ", danger1)
+    print("danger2: ", danger2)
+    print("danger3: ", danger3)
+
+
+    bestRoute = []
+    bestDanger = 0
+    if danger1 < danger2:
+        bestDanger = danger1
+        bestRoute = route1
+        print("driving best")
+    else:
+        bestDanger = danger2
+        bestRoute = route2
+        print("cycling best")
+    
+    if bestDanger > danger3:
+        bestDanger = danger3
+        bestRoute = route3
+        print("nah never mind walking is best")
+
+    i = 0
+    bestRoute = np.array(bestRoute)
+    crimes = np.array(crimes)
+    distance = (25/111139)**2
+    while i < len(bestRoute):
+        # d = np.linalg.norm(crimes - bestRoute[i], axis=1)
+        differences = crimes - bestRoute[i]
+        distances_squared = np.sum(differences ** 2, axis=1)
+        if np.nonzero(distances_squared < distance) >= 1:
+            pass
+        i+=1
     
 
 def get_danger(crimes, route):
-    distance = (15/111139)**2
+    distance = (25/111139)**2
     danger = 0
 
     for place in route:
         for crime in crimes:
             # if ((crime[1] - place[0])**2 + (crime[0] - place[1])**2) > 200:
                 # print("Check Danger function")
-            if ((crime[0] - place[0])**2 + (crime[0] - place[0])**2) < distance:
+            # print((crime[0] - place[0])**2 + (crime[0] - place[0])**2)
+            if ((crime[0] - place[0])**2 + (crime[1] - place[1])**2) < distance:
                 danger+=1
+        
     return danger
 
-def compare_route(crimes, route1, route2):
+def compare_route_2(crimes, route1, route2):
     crimes2 = copy.deepcopy(crimes)
     distance = (25/111139)**2
     danger1 = 0
@@ -139,5 +179,5 @@ if __name__ == "__main__":
     # print(crimes.shape)
     crimes = ast.literal_eval(crimes)
     # print(get_danger(crimes, route1))
-    result = get_safe_direction(crimes, starting_location, ending_location)
+    result = get_safe_direction(starting_location, ending_location, crimes)
     # print(result)

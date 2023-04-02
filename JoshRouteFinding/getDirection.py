@@ -33,6 +33,7 @@ def get_directions(start, end, driving=False, cycling=False):
     except:
         print("error")
         print(api_response)
+        return "error"
 
     # Reversing Longitude and Latitudes
     newRoute = []
