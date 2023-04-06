@@ -33,7 +33,10 @@ The ML model is an encoder-decoder based architecture, built using 3D convolutio
     - pandas
     - matplotlib
     - flask
-3. Run `app.py`
+3. Add a google api key to the file: (JoshRouteFinding/locationAPICall.py)
+4. Run `app.py`
+
+you will also need to 
 
 ### References
 
